@@ -1,0 +1,30 @@
+:root {
+  font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+  color: #20382e;
+  background: #f2f6f2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --ink: #20382e;
+  --muted: #64766c;
+  --line: #d6e2d9;
+  --surface: #ffffff;
+  --accent: #18765d;
+  --accent-hover: #105b47;
+  --danger: #a8433a;
+  --danger-hover: #f9eeeb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f2f6f2;
+}
+

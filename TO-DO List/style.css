@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-family: Arial, sans-serif;
+}
+
+.todo-container {
+    width: min(90%, 700px);
+    margin: 60px auto;
+}
+
+.todo-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.todo-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.todo-form input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    background-color: #1e293b;
+    color: white;
+}
+
+.todo-form button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #8b5cf6;
+    color: white;
+    cursor: pointer;
+}
+
+.error-message {
+    width: 100%;
+    margin: 5px 0 0;
+    color: #ef4444;
+    font-size: 14px;
+}
+
+.todo-content .completed {
+    text-decoration: line-through;
+    color: #64748b;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.filters button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #334155;
+    color: #cbd5e1;
+    cursor: pointer;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px;
+    margin-bottom: 10px;
+
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 8px;
+}
+
+.todo-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.delete-btn {
+    border: none;
+    background: none;
+    color: #ef4444;
+    cursor: pointer;
+}
+
+.todo-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    color: #94a3b8;
+}
+
+.todo-footer button {
+    border: none;
+    background: none;
+    color: #8b5cf6;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .todo-container {
+        width: 94%;
+        margin: 30px auto;
+    }
+
+    .todo-form {
+        flex-direction: column;
+    }
+
+    .todo-form input,
+    .todo-form button {
+        width: 100%;
+    }
+
+    .todo-footer {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+}
